@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Arch Gis</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_map">Показать на карте</string>
+    <string name="logo1">Arch</string>
+    <string name="logo2">GIS</string>
+    <string name="loading">Загрузка…</string>
+
+    <!--sign up-->
+    <string name="hint_name">Имя</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_confirm_password">Подтвердить пароль</string>
+    <!--sign in-->
+    <string name="forgot_password">Забыли пароль ?</string>
+    <string name="login_button">Вход</string>
+    <string name="register_now">Регистрация</string>
+    <!--buttons-->
+    <string name="next">Далее</string>
+    <string name="create">Создать</string>
+    <string name="info">О системе</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="pick_photo">Выберите файл</string>
+    <string name="add_coll">Добавить соавтора</string>
+    <string name="add_radiocarbon_dating">Добавить датировку</string>
+    <string name="add_plan">Добавить топоплан</string>
+    <string name="add_culture">Добавить культуру</string>
+    <string name="add_monument">Добавить памятник</string>
+    <string name="add_excavation">Добавить раскопки</string>
+    <string name="add_filter">Добавить критерий</string>
+    <string name="show_result">Показать результаты</string>
+    <!--create data-->
+    <string name="bt_fill">Приступить к заполнению</string>
+    <string name="tv_what_create">Что создается?</string>
+    <string name="tv_basis">На основе чего?</string>
+    <string name="report">Отчёт</string>
+    <string name="publication">Публикация</string>
+    <!--constructor-->
+    <string name="input_data">Внесение данных об артефакте</string>
+    <string name="research">Исследование</string>
+    <string name="collaborator">Соавтор</string>
+    <string name="author">Автор</string>
+    <string name="monument">Памятник</string>
+    <string name="excavation">Вскрытие</string>
+    <string name="collection">Коллекция</string>
+    <string name="artifact">Артефакт</string>
+    <string name="radiocarbon_dating">Радиоуглеродная датировка</string>
+    <string name="okn">ОКН</string>
+    <string name="photo">Фотографии</string>
+    <string name="topoplan">Топопланы</string>
+    <string name="cultures">Культуры</string>
+    <!--total-->
+    <string name="tv_mapping_accuracy">Точность пространственной привязки</string>
+    <string name="tv_belongs_to_monument">Принадлежит памятникам:</string>
+    <string name="tv_n">N</string>
+    <string name="name">Название</string>
+    <string name="tv_e">E</string>
+    <string name="tv_from">От</string>
+    <string name="tv_to">До</string>
+    <string name="one_photo">Фотография</string>
+    <string name="some_error">Ошибка!!!</string>
+    <string name="marker_error">Координаты не заданы</string>
+    <string name="year">Год</string>
+    <!--monument-->
+    <string name="tv_monument">Сведения о памятнике</string>
+    <string name="tv_monuments">Сведения о памятниках</string>
+    <string name="hint_monument">Выбрать существующий памятник</string>
+    <!--simple_chs-->
+    <string name="tv_simple_chs">Сведения об объекте культурного наследия</string>
+    <string name="hint_simple_chs">Название</string>
+    <!--excavation-->
+    <string name="excavation_tv_title">Сведения о вскрытиях</string>
+    <string name="excavation_tv_name">Название вскрытия</string>
+    <string name="excavation_tv_supervisor">Руководитель работ</string>
+    <string name="excavation_tv_area">Площадь (м²)</string>
+    <string name="excavation_tv_find_area">Место обнаружения (участок/квадрат)</string>
+    <string name="excavation_tv_depth">Глубина (см)</string>
+    <string name="excavation_tv_feature">Объект (археологический комплекс)</string>
+    <!--excavation_pub-->
+    <string name="excavation_tv_author_pub">Автор раскопок</string>
+    <string name="excavation_tv_date_pub">Год раскопок</string>
+    <string name="excavation_tv_name_pub">Название вскрытия</string>
+    <!--collection-->
+    <string name="collection_tv_name">Название коллекции</string>
+    <string name="collection_tv_number_book">№ по книге поступлений</string>
+    <string name="collection_tv_number_inventory">Инвентарный номер</string>
+    <string name="collection_tv_accounting">№ специального учета</string>
+    <string name="collection_tv_field_number">№ по полевой описи</string>
+    <string name="collection_tv_field_cipher">Полевой шифр</string>
+    <string name="collection_tv_year">Год добавления в коллекцию</string>
+    <!--artifact-->
+    <string name="artifact_tv_name">Название</string>
+    <string name="artifact_tv_year">Год находки</string>
+    <string name="artifact_tv_category">Категория</string>
+    <string name="artifact_tv_material">Материал</string>
+    <string name="artifact_tv_date">Датировка</string>
+    <string name="artifact_tv_attribution">Культурная принадлежность</string>
+    <string name="artifact_tv_description">Описание</string>
+    <!--research-->
+    <string name="research_title">Сведения об исследовании</string>
+    <string name="research_subtitle_author">Введите существующего автора исследования</string>
+    <string name="research_subtitle_report">Выберите существующий отчёт</string>
+    <string name="research_content_title_report">Содержание исследования:</string>
+    <string name="research_content_type_report">Тип</string>
+    <string name="research_subtitle_pub">Выберите существующий публикацию</string>
+    <string name="research_tv_name">Имя автора</string>
+    <string name="research_tv_report_title">Название отчёта</string>
+    <string name="research_tv_pub_title">Название публикации </string>
+    <string name="research_add_collaborator">Добавить соавтора</string>
+    <string name="research_date">Год проведения исследования</string>
+    <string name="research_report">Отчет</string>
+    <string name="research_additional">Дополнительная информация об исследовании</string>
+    <string name="research_desc">Описание исследования</string>
+    <!--culture-->
+    <string name="culture">Культура</string>
+    <string name="culture_tv_title">Сведения о культурах</string>
+    <string name="culture_tv_name">Название культуры</string>
+    <string name="culture_tv_date">Датировка</string>
+    <string name="culture_tv_description">Описание культуры</string>
+    <!--topoplan-->
+    <string name="topoplan_author">Автор топосъёмки</string>
+    <string name="topoplan_date">Год топосъёмки</string>
+    <!--add photo-->
+    <string name="photo_tv_date">Дата создания Фотографии</string>
+    <string name="photo_tv_monument">Элемент памятника</string>
+    <string name="photo_tv_author">Автор</string>
+    <string name="photo_tv_foreshortening">Ракурс</string>
+    <!--radiocarbon-->
+    <string name="radiocarbon_tv_index">Индекс</string>
+    <string name="radiocarbon_tv_date_type">Тип даты</string>
+    <string name="radiocarbon_tv_date_bp">Дата BP</string>
+    <string name="radiocarbon_tv_plus">±1s</string>
+    <string name="radiocarbon_tv_bc68">BC/AD 68.2% from</string>
+    <string name="radiocarbon_tv_bc95">BC/AD 95.4% from</string>
+    <string name="radiocarbon_tv_depth">Глубина от современной поверхности</string>
+    <string name="radiocarbon_tv_relative">Глубина относительно высотного репера (нивелировочная отметка), см</string>
+    <string name="radiocarbon_tv_find_area">Место обнаружения (участок/квадрат)</string>
+    <string name="radiocarbon_tv_feature">Объект (археологический комплекс)</string>
+    <string name="radiocarbon_tv_stratigraphic">Стратиграфическая характеристика вмещающего слоя</string>
+    <string name="radiocarbon_tv_genesis">Генезис вмещающих осадков</string>
+    <string name="radiocarbon_tv_material">Датированный материал</string>
+    <string name="radiocarbon_tv_desc">Описание образца</string>
+    <!--navigation menu-->
+    <string name="menu_home">Главная</string>
+    <string name="menu_create_data">Внесение данных</string>
+    <string name="menu_quick_search">Быстрый поиск</string>
+    <string name="menu_advanced_search">Расширенный поиск</string>
+    <string name="menu_exit">Выход</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <!--action menu-->
+    <string name="menu_up">Свернуть</string>
+    <string name="menu_down">Развернуть</string>
+    <string name="menu_delete">Удалить</string>
+    <!--filter for search-->
+    <string name="advanced_value">Значение</string>
+    <string name="filter">Критерий</string>
+    <string name="tv_advanced_search">Расширенный поиск</string>
+    <string name="tv_quick_search">Быстрый поиск</string>
+    <string name="tv_quick_search_filter">Критерии поиска</string>
+    <string name="tv_search_subject">Что ищем?</string>
+
+    <string name="epoch">Эпоха</string>
+    <string name="type">Тип</string>
+    <string name="report_year_quick">Год создания отчёта</string>
+    <string name="chs_quick">Название ОКН</string>
+    <string name="index">Индекс</string>
+    <string name="name_item">Наименование</string>
+    <string name="empty_search">Ничего не найдено</string>
+    
+    <!--show author-->
+    <string name="birth">Год рождения:</string>
+    <string name="author_name">Имя:</string>
+    <string name="not_specified">Не указано</string>
+    <string name="organization">Организация:</string>
+    <string name="not_data">Нет данных</string>
+    <string name="bio">Биография:</string>
+    <string name="not_filled">Не заполнено</string>
+    <string name="general">Общие сведения</string>
+
+
+
+    <string name="hello_blank_fragment">Артефакт</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

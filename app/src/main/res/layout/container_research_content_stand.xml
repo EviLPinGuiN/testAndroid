@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/child_margin_top"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_report_research"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/research_subtitle_report"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text.24" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_report_research"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_report_research"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/et_report_research"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/research_tv_report_title"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

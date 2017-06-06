@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_name_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_name_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_name"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_supervisor_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_name_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_supervisor_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_supervisor"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_area_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_supervisor_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_area_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_area"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_find_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_area_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_find_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_find_area"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_depth_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_find_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_depth_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_depth"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_feature_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_depth_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_feature_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/excavation_tv_feature"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_mapping_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_mapping_accuracy"
+                android:textSize="@dimen/text.20"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/ti_feature_excavation"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_mapping_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_items_margin"
+                android:layout_below="@+id/tv_mapping_excavation">
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_n_excavation"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_mapping_excavation"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_n_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_n"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_e_excavation"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_belongs_excavation"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:id="@+id/et_e_excavation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_e"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_belongs_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_belongs_to_monument"
+                android:textSize="@dimen/text.20"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/ti_n_excavation"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_monument_excavation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_below="@+id/tv_belongs_excavation"
+                android:layout_marginTop="@dimen/card_items_margin"
+                android:text="@string/monument"
+                />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_next_excavation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb_monument_excavation"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_marginEnd="8dp"
+                android:text="@string/next" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

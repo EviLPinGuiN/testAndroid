@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.kpfu.itis.archgis.screen.quick.QuickSearchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_quick_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="@string/tv_quick_search"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/text.32" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_quick_search_object"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_search_subject"
+                    android:textSize="@dimen/text.20" />
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_quick_search_object"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_quick_search_object"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/child_margin_top">
+
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <TextView
+                    android:id="@+id/tv_title_quick_search_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_quick_search_object"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/tv_quick_search_filter"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text.24" />
+
+                <!--monument-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_monument_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_name_monument_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_epoch_monument_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ti_name_monument_quick"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:text="@string/epoch"
+                    android:textSize="@dimen/text.20"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_epoch_monument_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_epoch_monument_quick"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_type_monument_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_epoch_monument_quick"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:text="@string/type"
+                    android:textSize="@dimen/text.20"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sp_type_monument_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_type_monument_quick"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:visibility="gone" />
+
+                <!--research-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_author_research_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_name_author_research_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_tv_name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_year_research_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ti_name_author_research_quick"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_year_research_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_date"
+                        android:inputType="number"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--author-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_author_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_name_author_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_tv_name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--report-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_author_report_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_name_author_report_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_tv_name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_year_report_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:layout_below="@+id/ti_name_author_report_quick"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_year_report_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/report_year_quick"
+                        android:inputType="number"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--CHS-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_chs_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_name_chs_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/chs_quick"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--Excavation-->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_name_author_excavation_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_name_author_excavation_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_tv_name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_year_research_excavation_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ti_name_author_excavation_quick"
+                    android:layout_marginTop="@dimen/child_margin_top"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_year_research_excavation_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/research_date"
+                        android:inputType="number"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!--radiocarbon-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_index_radiocarbon_quick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_quick_search_filter"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/et_index_radiocarbon_quick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/index"
+                        android:inputType="text"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_quick_show_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_result" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>
+
+
+
+</LinearLayout>

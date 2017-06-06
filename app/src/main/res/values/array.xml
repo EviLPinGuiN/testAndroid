@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_mapping">
+        <item>По словесному описанию</item>
+        <item>По мелкомасштабной карте или абрису</item>
+        <item>По крупномасштабной карте или снимку</item>
+        <item>Точная, метровая</item>
+        <item>Точная, субметровая</item>
+    </string-array>
+    <string-array name="array_date">
+        <item>Века</item>
+        <item>Года</item>
+        <item>Эпохи</item>
+    </string-array>
+    <string-array name="photo_array_foreshortening">
+        <item>Север</item>
+        <item>Северо-восток</item>
+        <item>Восток</item>
+        <item>Юго-восток</item>
+        <item>Юг</item>
+        <item>Юго-запад</item>
+        <item>Запад</item>
+        <item>Северо-запад</item>
+    </string-array>
+    <string-array name="search_spinner_array">
+        <item>Автор</item>
+        <item>Исследование</item>
+        <item>Памятник</item>
+    </string-array>
+    <string-array name="search_spinner_array_quick">
+        <item>Памятник</item>
+        <item>Исследование</item>
+        <item>Автор</item>
+        <item>Отчёт</item>
+        <item>ОКН</item>
+        <item>Вскрытие</item>
+        <item>Радиоуглеродная датировка</item>
+    </string-array>
+    <string-array name="filter_spinner_array">
+        <item>Автор: имя</item>
+        <item>Автор: место работы</item>
+        <item>Артефакт: категория</item>
+        <item>Артефакт: культура</item>
+        <item>Артефакт: материал</item>
+        <item>Артефакт: название</item>
+        <item>Артефакт: изображения, сделанные ранее…</item>
+        <item>Артефакт: изображения, сделанные позднее…</item>
+        <item>Артефакт: найден до…</item>
+        <item>Артефакт: найден после…</item>
+        <item>Вскрытия: общая площадь более…</item>
+        <item>Вскрытия: общая площадь менее…</item>
+        <item>Вскрытие: название объекта</item>
+        <item>Вскрытие: руководитель работ</item>
+        <item>Исследования: проведено позднее…</item>
+        <item>Исследования: проведено ранее…</item>
+        <item>Исследования: тип</item>
+        <item>Коллекция: место хранения</item>
+        <item>Коллекция: название</item>
+        <item>ОКН: категория охраны</item>
+        <item>ОКН: местоположение - Регион РФ</item>
+        <item>ОКН: поставлен на охрану позднее…</item>
+        <item>ОКН: поставлен на охрану ранее…</item>
+        <item>Памятник: культура</item>
+        <item>Памятник: название</item>
+        <item>Памятник: координаты</item>
+        <item>Памятник: топопланы, снятые позднее…</item>
+        <item>Памятник: топопланы, снятые ранее…</item>
+        <item>Памятник: фотографии, снятые позднее…</item>
+        <item>Памятник: фотографии, снятые ранее…</item>
+        <item>Памятник: эпоха</item>
+        <item>Публикация: место издания</item>
+        <item>Публикация: название публикации</item>
+    </string-array>
+    <string-array name="epoch">
+        <item>Ничего не выбрано</item>
+        <item>Новое время</item>
+        <item>Средневековье</item>
+        <item>Эпоха Великого переселения</item>
+        <item>Ранний железный век</item>
+        <item>Эпоха палеометалла</item>
+        <item>Неолит</item>
+        <item>Палеолит/Мезолит</item>
+        <item>Не определена</item>
+    </string-array>
+    <string-array name="monument_type">
+        <item>Ничего не выбрано</item>
+        <item>Укрепленное поселение(городище)</item>
+        <item>Неукрепленное поселение(стоянка/селище)</item>
+        <item>Местонахождение</item>
+        <item>Грунтовой могильник</item>
+        <item>Курганный могильник</item>
+        <item>Производственный</item>
+        <item>Комплексный</item>
+        <item>Памятник архитектуры</item>
+        <item>Надгробие</item>
+        <item>Святилище(жертвенное место)</item>
+        <item>Клад</item>
+        <item>Не задано</item>
+    </string-array>
+
+</resources>

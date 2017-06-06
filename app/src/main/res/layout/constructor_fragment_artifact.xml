@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_name_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_name_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_name"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_year_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_name_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_year_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_year"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_category_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_year_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_category_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_category"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_material_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_category_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_material_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_material"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tv_date_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artifact_tv_date"
+                android:textSize="@dimen/text.20"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/ti_material_artifact"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_date_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_items_margin"
+                android:layout_below="@+id/tv_date_artifact">
+            </android.support.v7.widget.AppCompatSpinner>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_from_artifact"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_date_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_from_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_from"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_to_artifact"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ti_attribution_artifact"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:id="@+id/et_to_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_to"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_attribution_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_from_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_attribution_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_attribution"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_mapping_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_mapping_accuracy"
+                android:textSize="@dimen/text.20"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:layout_below="@+id/ti_attribution_artifact"
+                />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_mapping_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_items_margin"
+                android:layout_below="@+id/tv_mapping_artifact">
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_n_artifact"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp_mapping_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_n_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_n"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_e_artifact"
+                android:layout_width="@dimen/number_width"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ti_desc_artifact"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:id="@+id/et_e_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/tv_e"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_desc_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ti_n_artifact"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+                <EditText
+                    android:id="@+id/et_desc_artifact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/artifact_tv_description"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_belongs_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ti_desc_artifact"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:text="@string/tv_belongs_to_monument"
+                android:textSize="@dimen/text.20" />
+
+            <CheckBox
+                android:id="@+id/cb_monument_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_belongs_artifact"
+                android:layout_marginTop="@dimen/card_items_margin"
+                android:checked="false"
+
+                android:text="@string/monument" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/container_one_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/child_margin_top"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/button_pick_photo_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/card_items_margin"
+                android:text="@string/add_photo" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

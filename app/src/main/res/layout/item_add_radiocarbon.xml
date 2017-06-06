@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_add_radiocarbon"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/card_items_margin"
+    android:layout_marginRight="@dimen/card_items_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/card_items_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title_item_radiocarbon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text.20" />
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/button_more_action_item_radiocarbon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/animate_container_radiocarbon_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/card_items_margin"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_index_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_name_artifact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_index"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_date_type_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_index_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_date_type_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_date_type"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_date_bp_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_date_type_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_date_bp_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_date_bp"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_plus_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_date_bp_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_plus_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_plus"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_bc68_radiocarbon"
+            android:layout_width="@dimen/number_bc_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_plus_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_bc68_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_bc68"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_to_radiocarbon"
+            android:layout_width="@dimen/number_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ti_to95_radiocarbon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_to_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_to"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_bc95_radiocarbon"
+            android:layout_width="@dimen/number_bc_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_bc68_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_bc95_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_bc95"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_to95_radiocarbon"
+            android:layout_width="@dimen/number_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_mapping_radiocarbon"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:id="@+id/et_to95_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_to"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_mapping_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_mapping_accuracy"
+            android:textSize="@dimen/text.18"
+            android:layout_marginTop="@dimen/child_margin_top"
+            android:layout_below="@+id/ti_bc95_radiocarbon"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/sp_mapping_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_items_margin"
+            android:layout_below="@+id/tv_mapping_radiocarbon">
+        </android.support.v7.widget.AppCompatSpinner>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_n_radiocarbon"
+            android:layout_width="@dimen/number_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp_mapping_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_n_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_n"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_e_radiocarbon"
+            android:layout_width="@dimen/number_width"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ti_depth_radiocarbon"
+            android:layout_alignParentEnd="true">
+
+            <EditText
+                android:id="@+id/et_e_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_e"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_depth_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_n_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_depth_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_depth"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_relative_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_depth_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_relative_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_relative"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_area_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_relative_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_area_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_find_area"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_feature_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_area_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_feature_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_feature"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_stratigraphic_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_feature_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_stratigraphic_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_stratigraphic"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_genesis_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_stratigraphic_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_genesis_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_genesis"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_material_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_genesis_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_material_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_material"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ti_desc_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti_material_radiocarbon"
+            android:layout_marginTop="@dimen/child_margin_top">
+
+            <EditText
+                android:id="@+id/et_desc_radiocarbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/radiocarbon_tv_desc"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_belongs_radiocarbon_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_belongs_to_monument"
+            android:textSize="@dimen/text.18"
+            android:layout_marginTop="@dimen/child_margin_top"
+            android:layout_below="@+id/ti_desc_radiocarbon"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_monument_radiocarbon_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_below="@+id/tv_belongs_radiocarbon_item"
+            android:layout_marginTop="@dimen/card_items_margin"
+            android:textSize="@dimen/text.18"
+            android:text="@string/monument"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_pick_photo_radiocarbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/child_margin_top"
+            android:layout_below="@id/cb_monument_radiocarbon_item"
+            android:text="@string/pick_photo"/>
+
+        <ImageView
+            android:id="@+id/iv_pick_photo_radiocarbon_item"
+            android:layout_width="@dimen/photo_size"
+            android:layout_height="@dimen/photo_size"
+            android:visibility="gone"
+            android:layout_below="@id/button_pick_photo_radiocarbon"
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ru.kpfu.itis.archgis.screen.data.CreateDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_what_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:text="@string/tv_what_create"
+                android:textSize="@dimen/text.20" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_what_create"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <TextView
+                android:id="@+id/tv_basis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp_what"
+                android:layout_marginTop="@dimen/child_margin_top"
+                android:text="@string/tv_basis"
+                android:textSize="@dimen/text.20" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sp_basis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sp_what"
+                android:layout_below="@+id/tv_basis"
+                android:layout_marginTop="@dimen/child_margin_top">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_fill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp_basis"
+                android:layout_marginTop="@dimen/button_margin"
+                android:text="@string/bt_fill"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
