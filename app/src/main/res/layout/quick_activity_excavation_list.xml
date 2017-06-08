@@ -12,7 +12,7 @@
         />
 
 
-    <ru.kpfu.itis.archgis.utils.EmptyRecyclerView
+    <ru.kpfu.itis.archgis.utils.widget.EmptyRecyclerView
         android:id="@+id/recyclerView"
         android:layout_below="@id/button_show_in_map"
         android:layout_width="match_parent"

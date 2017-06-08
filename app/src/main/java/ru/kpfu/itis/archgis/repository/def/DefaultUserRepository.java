@@ -1,10 +1,11 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import io.reactivex.Observable;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.Response;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.impl.UserRepository;
 
 /**

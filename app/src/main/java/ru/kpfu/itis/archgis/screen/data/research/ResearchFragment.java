@@ -1,15 +1,12 @@
 package ru.kpfu.itis.archgis.screen.data.research;
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,21 +22,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.realm.Realm;
 import io.realm.RealmList;
-import io.realm.RealmObject;
 import ru.kpfu.itis.archgis.R;
 import ru.kpfu.itis.archgis.model.data.general.Author;
-import ru.kpfu.itis.archgis.model.data.details.ResearchDetails;
 import ru.kpfu.itis.archgis.model.data.general.Publication;
 import ru.kpfu.itis.archgis.model.data.general.Report;
 import ru.kpfu.itis.archgis.screen.adapter.AuthorFilterableRealmAdapter;
 import ru.kpfu.itis.archgis.screen.adapter.AuthorSearchRecyclerViewAdapter;
 import ru.kpfu.itis.archgis.screen.data.BaseFragment;
 import ru.kpfu.itis.archgis.screen.data.publication.PublicationActivity;
-import ru.kpfu.itis.archgis.screen.data.report.ReportActivity;
 import ru.kpfu.itis.archgis.utils.Constants;
-import ru.kpfu.itis.archgis.utils.DividerItemDecoration;
-
-import static ru.kpfu.itis.archgis.utils.Validation.validateFields;
+import ru.kpfu.itis.archgis.utils.widget.DividerItemDecoration;
 
 /**
  * A simple {@link Fragment} subclass.

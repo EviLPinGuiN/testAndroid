@@ -38,8 +38,6 @@ public class MainRecycleView extends RecyclerView.Adapter<MainItemHolder>{
 
     @Override
     public MainItemHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-//        CardView cv = (CardView) LayoutInflater.from(parent.getContext())
-//                .inflate(R.layout.nav_item , parent, false);
         return MainItemHolder.create(parent.getContext());
     }
 

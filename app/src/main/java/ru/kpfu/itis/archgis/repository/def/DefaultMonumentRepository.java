@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -10,6 +10,8 @@ import io.realm.RealmResults;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.data.general.Monument;
 import ru.kpfu.itis.archgis.model.response.MonumentResponse;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.cache.RealmCacheErrorHandler;
 import ru.kpfu.itis.archgis.repository.cache.RealmRewriteCache;
 import ru.kpfu.itis.archgis.repository.impl.MonumentRepository;
@@ -51,7 +53,7 @@ public class DefaultMonumentRepository extends BaseRepository implements Monumen
 
     @Override
     public Observable<List<MonumentResponse>> monuments(String name, String epoch, String type) {
-        return ApiFactory.getQuickSearchService()
+        return ApiFactory.getMonumentService()
                 .getMonuments(name, epoch, type)
                 .flatMap(new RealmRewriteCache<>(MonumentResponse.class))
                 .onErrorResumeNext(new RealmCacheErrorHandler<>(MonumentResponse.class))

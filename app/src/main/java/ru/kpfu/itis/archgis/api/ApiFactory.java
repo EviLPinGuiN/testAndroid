@@ -27,10 +27,14 @@ public final class ApiFactory {
     private static OkHttpClient sClient;
 
 
-    private static volatile SearchService searchService;
+    private static volatile ChsService chsService;
     private static volatile UserService userService;
     private static volatile ResearchService researchService;
     private static volatile AuthorService authorService;
+    private static volatile MonumentService monumentService;
+    private static volatile ExcavationService excavationService;
+    private static volatile RadiocarbonService radiocarbonService;
+    private static volatile ReportService reportService;
     private static volatile Gson mgson;
 
 
@@ -38,18 +42,75 @@ public final class ApiFactory {
     }
 
     @NonNull
-    public static SearchService getQuickSearchService() {
-        SearchService service = searchService;
+    public static ChsService getChsService() {
+        ChsService service = chsService;
         if (service == null) {
             synchronized (ApiFactory.class) {
-                service = searchService;
+                service = chsService;
                 if (service == null) {
-                    service = searchService = buildRetrofit().create(SearchService.class);
+                    service = chsService = buildRetrofit().create(ChsService.class);
                 }
             }
         }
         return service;
     }
+
+    @NonNull
+    public static MonumentService getMonumentService() {
+        MonumentService service = monumentService;
+        if (service == null) {
+            synchronized (ApiFactory.class) {
+                service = monumentService;
+                if (service == null) {
+                    service = monumentService = buildRetrofit().create(MonumentService.class);
+                }
+            }
+        }
+        return service;
+    }
+
+    @NonNull
+    public static ExcavationService getExcavationService() {
+        ExcavationService service = excavationService;
+        if (service == null) {
+            synchronized (ApiFactory.class) {
+                service = excavationService;
+                if (service == null) {
+                    service = excavationService = buildRetrofit().create(ExcavationService.class);
+                }
+            }
+        }
+        return service;
+    }
+
+    @NonNull
+    public static RadiocarbonService getRadiocarbonService() {
+        RadiocarbonService service = radiocarbonService;
+        if (service == null) {
+            synchronized (ApiFactory.class) {
+                service = radiocarbonService;
+                if (service == null) {
+                    service = radiocarbonService = buildRetrofit().create(RadiocarbonService.class);
+                }
+            }
+        }
+        return service;
+    }
+
+    @NonNull
+    public static ReportService getReportService() {
+        ReportService service = reportService;
+        if (service == null) {
+            synchronized (ApiFactory.class) {
+                service = reportService;
+                if (service == null) {
+                    service = reportService = buildRetrofit().create(ReportService.class);
+                }
+            }
+        }
+        return service;
+    }
+
 
     @NonNull
     public static AuthorService getAuthorService() {
@@ -115,7 +176,14 @@ public final class ApiFactory {
     public static void recreate() {
         sClient = null;
         sClient = getClient();
-        searchService = buildRetrofit().create(SearchService.class);
+        authorService = buildRetrofit().create(AuthorService.class);
+        chsService = buildRetrofit().create(ChsService.class);
+        excavationService = buildRetrofit().create(ExcavationService.class);
+        monumentService = buildRetrofit().create(MonumentService.class);
+        radiocarbonService = buildRetrofit().create(RadiocarbonService.class);
+        reportService = buildRetrofit().create(ReportService.class);
+        researchService = buildRetrofit().create(ResearchService.class);
+        userService = buildRetrofit().create(UserService.class);
 
     }
 

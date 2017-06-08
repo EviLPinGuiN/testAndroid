@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.utils;
+package ru.kpfu.itis.archgis.utils.widget;
 
 import android.view.View;
 import android.view.WindowManager;

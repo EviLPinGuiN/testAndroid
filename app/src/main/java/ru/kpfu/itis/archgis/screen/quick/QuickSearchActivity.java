@@ -11,15 +11,12 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import ru.kpfu.itis.archgis.R;
-import ru.kpfu.itis.archgis.model.data.general.Author;
 import ru.kpfu.itis.archgis.screen.BaseActivity;
-import ru.kpfu.itis.archgis.screen.common.CommonAdapter;
 import ru.kpfu.itis.archgis.screen.quick.authorlist.AuthorListActivity;
 import ru.kpfu.itis.archgis.screen.quick.chslist.ChsListActivity;
 import ru.kpfu.itis.archgis.screen.quick.excavationlist.ExcavationListActivity;
@@ -28,7 +25,6 @@ import ru.kpfu.itis.archgis.screen.quick.radiocarbonlist.RadiocarbonListActivity
 import ru.kpfu.itis.archgis.screen.quick.reportlist.ReportListActivity;
 import ru.kpfu.itis.archgis.screen.quick.researchlist.ResearchListActivity;
 import ru.kpfu.itis.archgis.utils.Constants;
-import ru.kpfu.itis.archgis.utils.EmptyRecyclerView;
 
 public class QuickSearchActivity extends BaseActivity{
 

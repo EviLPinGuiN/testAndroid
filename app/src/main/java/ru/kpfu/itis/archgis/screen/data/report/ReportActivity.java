@@ -12,6 +12,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import io.realm.RealmObject;
 import ru.kpfu.itis.archgis.R;
 import ru.kpfu.itis.archgis.screen.BaseActivity;
@@ -42,22 +43,9 @@ public class ReportActivity extends BaseActivity implements BaseCreateView
 
 
     private ReportViewPagerAdapter adapter;
-    private List<DataCreateListener> mListeners;
     private BasePresenter presenter;
 
 
-
-    public interface DataCreateListener {
-        RealmObject validate();
-    }
-
-    public synchronized void registerDataCreateListener(DataCreateListener listener) {
-        mListeners.add(listener);
-    }
-
-    public synchronized void unregisterDataCreateListener(DataCreateListener listener) {
-        mListeners.remove(listener);
-    }
 
 
     @Override
@@ -75,46 +63,20 @@ public class ReportActivity extends BaseActivity implements BaseCreateView
         }
 
         String createData = getIntent().getStringExtra(Constants.CREATE_DATA_EXTRAS);
-//        initPresenters(createData);
-        mListeners = new ArrayList<>();
         adapter = new ReportViewPagerAdapter(getSupportFragmentManager());
         adapter.setViewPager(mViewPager, createData);
         mTabLayout.setupWithViewPager(mViewPager);
-        mBtCreate.setOnClickListener(v -> onCreateData());
+
 
     }
 
 
-
+    @Override
+    @OnClick(R.id.button_create_report)
     public void onCreateData() {
-//        HashMap<String, RealmObject> list = new HashMap<>();
-//        for(DataCreateListener listener : mListeners){
-//            if(listener.validate()!=null)
-//                list.put(listener.getClass().getSimpleName(), listener.validate());
-//        }
         presenter.save();
-
     }
 
-//    @Override
-//    public void getArtifactDetails(ArtifactDetails artifactDetails) {
-//        Toast toast = Toast.makeText(getApplicationContext(),
-//                "Пора покормить кота!", Toast.LENGTH_SHORT);
-//        toast.show();
-//    }
-
-
-//    private void initPresenters(String createData){
-//        if (createData.contentEquals(getResources().getString(R.string.artifact))) {
-//           presenter = new ArtifactPresenter(this, this);
-//        }
-//        if (createData.contentEquals(getResources().getString(R.string.monument))) {
-//            presenter = new MonumentPresenter(this);
-//        }
-//        if (createData.contentEquals(getResources().getString(R.string.research))) {
-//            presenter = new ResearchPresenter(this);
-//        }
-//    }
 
 //    @Override
 //    public void showArtifacts(List<Artifact> list) {

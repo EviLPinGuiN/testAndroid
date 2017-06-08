@@ -29,7 +29,7 @@ import java.lang.reflect.Field;
 import ru.kpfu.itis.archgis.R;
 import ru.kpfu.itis.archgis.screen.data.publication.PublicationActivity;
 import ru.kpfu.itis.archgis.screen.data.report.ReportActivity;
-import ru.kpfu.itis.archgis.utils.AnimationUtil;
+import ru.kpfu.itis.archgis.utils.widget.AnimationUtil;
 import ru.kpfu.itis.archgis.utils.Utility;
 
 

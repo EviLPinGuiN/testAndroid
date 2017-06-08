@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -9,6 +9,7 @@ import io.realm.Realm;
 import io.realm.RealmResults;
 import ru.kpfu.itis.archgis.model.data.general.Artifact;
 import ru.kpfu.itis.archgis.model.response.ExcavationResponse;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
 import ru.kpfu.itis.archgis.repository.impl.ArtifactRepository;
 
 /**

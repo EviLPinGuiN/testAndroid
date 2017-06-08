@@ -1,12 +1,11 @@
 package ru.kpfu.itis.archgis.screen.common;
 
 import android.support.annotation.NonNull;
-import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
 
-import ru.kpfu.itis.archgis.utils.BaseAdapter;
+import ru.kpfu.itis.archgis.utils.widget.BaseAdapter;
 
 
 /**

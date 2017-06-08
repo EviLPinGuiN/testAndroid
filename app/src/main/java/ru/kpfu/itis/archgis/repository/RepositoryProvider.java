@@ -2,7 +2,15 @@ package ru.kpfu.itis.archgis.repository;
 
 import android.support.annotation.NonNull;
 
-import ru.kpfu.itis.archgis.model.data.general.Artifact;
+import ru.kpfu.itis.archgis.repository.def.DefaultArtifactRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultAuthorRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultChsRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultExcavationRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultMonumentRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultRadiocarbonRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultReportRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultResearchRepository;
+import ru.kpfu.itis.archgis.repository.def.DefaultUserRepository;
 import ru.kpfu.itis.archgis.repository.impl.ArtifactRepository;
 import ru.kpfu.itis.archgis.repository.impl.AuthorRepository;
 import ru.kpfu.itis.archgis.repository.impl.ChsRepository;
@@ -120,11 +128,6 @@ public final class RepositoryProvider {
             sReportRepository = new DefaultReportRepository();
         }
         return sReportRepository;
-    }
-
-
-    public static void setResearchRepository(ResearchRepository repository) {
-        sResearchRepository = repository;
     }
 
 }

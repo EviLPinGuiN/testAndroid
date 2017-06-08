@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.utils;
+package ru.kpfu.itis.archgis.utils.widget;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ru.kpfu.itis.archgis.utils.widget.EmptyRecyclerView;
 
 /**
  * Created by DNS1 on 21.05.2017.

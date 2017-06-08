@@ -3,25 +3,18 @@ package ru.kpfu.itis.archgis.screen.map;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AutoCompleteTextView;
-import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,19 +24,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.ArrayList;
-
 import ru.kpfu.itis.archgis.R;
-import ru.kpfu.itis.archgis.screen.BaseActivity;
 import ru.kpfu.itis.archgis.screen.MainActivity;
 import ru.kpfu.itis.archgis.screen.advanced.AdvancedSearchActivity;
 import ru.kpfu.itis.archgis.screen.auth.StartActivity;
 import ru.kpfu.itis.archgis.screen.data.CreateDataActivity;
 import ru.kpfu.itis.archgis.screen.quick.QuickSearchActivity;
-import ru.kpfu.itis.archgis.utils.ActionBarDrawerToggle;
+import ru.kpfu.itis.archgis.utils.widget.ActionBarDrawerToggle;
 import ru.kpfu.itis.archgis.utils.PreferencesManager;
-
-import static android.R.id.toggle;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 

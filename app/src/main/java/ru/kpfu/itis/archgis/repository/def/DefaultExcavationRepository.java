@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -10,6 +10,8 @@ import io.realm.RealmResults;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.data.general.Excavation;
 import ru.kpfu.itis.archgis.model.response.ExcavationResponse;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.cache.RealmCacheErrorHandler;
 import ru.kpfu.itis.archgis.repository.cache.RealmRewriteCache;
 import ru.kpfu.itis.archgis.repository.impl.ExcavationRepository;
@@ -32,7 +34,7 @@ public class DefaultExcavationRepository extends BaseRepository implements Excav
 
     @Override
     public Observable<List<ExcavationResponse>> excavations(String author, String year) {
-        return ApiFactory.getQuickSearchService()
+        return ApiFactory.getExcavationService()
                 .getExcavation(author, year)
                 .flatMap(new RealmRewriteCache<>(ExcavationResponse.class))
                 .onErrorResumeNext(new RealmCacheErrorHandler<>(ExcavationResponse.class))

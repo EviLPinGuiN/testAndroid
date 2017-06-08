@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -8,6 +8,8 @@ import io.reactivex.Observable;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.data.general.Report;
 import ru.kpfu.itis.archgis.model.response.ReportResponse;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.cache.RealmCacheErrorHandler;
 import ru.kpfu.itis.archgis.repository.cache.RealmRewriteCache;
 import ru.kpfu.itis.archgis.repository.impl.ReportRepository;
@@ -30,7 +32,7 @@ public class DefaultReportRepository extends BaseRepository implements ReportRep
 
     @Override
     public Observable<List<ReportResponse>> reports(String author, String year) {
-        return ApiFactory.getQuickSearchService()
+        return ApiFactory.getReportService()
                 .getReports(author, year)
                 .flatMap(new RealmRewriteCache<>(ReportResponse.class))
                 .onErrorResumeNext(new RealmCacheErrorHandler<>(ReportResponse.class))

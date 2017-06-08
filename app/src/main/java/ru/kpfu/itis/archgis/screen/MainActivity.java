@@ -9,23 +9,19 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
-import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import ru.kpfu.itis.archgis.R;
 import ru.kpfu.itis.archgis.model.MainIcons;
 import ru.kpfu.itis.archgis.screen.adapter.MainRecycleView;
 import ru.kpfu.itis.archgis.screen.advanced.AdvancedSearchActivity;
 import ru.kpfu.itis.archgis.screen.data.CreateDataActivity;
 import ru.kpfu.itis.archgis.screen.quick.QuickSearchActivity;
-import ru.kpfu.itis.archgis.utils.GridSpacingItemDecoration;
+import ru.kpfu.itis.archgis.utils.widget.GridSpacingItemDecoration;
 import ru.kpfu.itis.archgis.utils.PreferencesManager;
 
 

@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -16,6 +16,8 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.data.general.Author;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.cache.RealmCacheErrorHandler;
 import ru.kpfu.itis.archgis.repository.cache.RealmRewriteCache;
 import ru.kpfu.itis.archgis.repository.impl.AuthorRepository;

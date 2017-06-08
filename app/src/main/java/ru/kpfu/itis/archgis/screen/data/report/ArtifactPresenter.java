@@ -65,22 +65,11 @@ public class ArtifactPresenter implements BasePresenter {
         artifact.setCollection(collection);
 
         monument.setResearch(research);
-
-//        Artifact artifact = new Artifact();
-//        ArtifactDetails artifactDetails = (ArtifactDetails) object.get(ArtifactFragment.class.getSimpleName());
-//        MonumentDetails monumentDetails = (MonumentDetails) object.get(MonumentFragment.class.getSimpleName());
-//        ExcavationDetails excavationDetails = (ExcavationDetails) object.get(ExcavationFragment.class.getSimpleName());
-//        CollectionDetails collectionDetails = (CollectionDetails) object.get(CollectionFragment.class.getSimpleName());
-//        artifact.setArtifactDetails(artifactDetails);
-//        artifact.setMonumentDetails(monumentDetails);
-//        artifact.setExcavationDetails(excavationDetails);
-//        artifact.setCollectionDetails(collectionDetails);
         RepositoryProvider.provideAuthorRepository().saveAuthor(author);
         RepositoryProvider.provideResearchRepository().saveResearch(research);
         RepositoryProvider.provideMoumentRepository().saveMonument(monument);
         RepositoryProvider.provideExcavationRepository().saveExcavation(excavation);
-//        RepositoryProvider
-//        RepositoryProvider
+
         RepositoryProvider.provideArtifactRepository().saveArtifact(artifact);
     }
 

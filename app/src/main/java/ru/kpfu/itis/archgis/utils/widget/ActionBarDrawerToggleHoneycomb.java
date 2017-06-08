@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.utils;
+package ru.kpfu.itis.archgis.utils.widget;
 
 
 import android.app.ActionBar;

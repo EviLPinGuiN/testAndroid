@@ -1,6 +1,5 @@
 package ru.kpfu.itis.archgis.screen.quick.researchlist;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -23,11 +22,10 @@ import ru.kpfu.itis.archgis.screen.common.CommonAdapter;
 import ru.kpfu.itis.archgis.screen.common.CommonListView;
 import ru.kpfu.itis.archgis.screen.common.LoadingDialog;
 import ru.kpfu.itis.archgis.screen.common.LoadingView;
-import ru.kpfu.itis.archgis.screen.map.SearchMapActivity;
-import ru.kpfu.itis.archgis.utils.BaseAdapter;
+import ru.kpfu.itis.archgis.utils.widget.BaseAdapter;
 import ru.kpfu.itis.archgis.utils.Constants;
-import ru.kpfu.itis.archgis.utils.DividerItemDecoration;
-import ru.kpfu.itis.archgis.utils.EmptyRecyclerView;
+import ru.kpfu.itis.archgis.utils.widget.DividerItemDecoration;
+import ru.kpfu.itis.archgis.utils.widget.EmptyRecyclerView;
 
 public class ResearchListActivity extends BaseActivity implements CommonListView<ResearchResponse>,
         BaseAdapter.OnItemClickListener<ResearchResponse> {

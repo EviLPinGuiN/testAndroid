@@ -1,5 +1,6 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
+import ru.kpfu.itis.archgis.repository.BaseRepository;
 import ru.kpfu.itis.archgis.repository.impl.CultureRepository;
 
 /**

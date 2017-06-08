@@ -1,4 +1,4 @@
-package ru.kpfu.itis.archgis.repository;
+package ru.kpfu.itis.archgis.repository.def;
 
 import android.support.annotation.NonNull;
 
@@ -10,6 +10,8 @@ import io.realm.RealmResults;
 import ru.kpfu.itis.archgis.api.ApiFactory;
 import ru.kpfu.itis.archgis.model.data.details.SimpleChsDetails;
 import ru.kpfu.itis.archgis.model.response.ChsResponse;
+import ru.kpfu.itis.archgis.repository.BaseRepository;
+import ru.kpfu.itis.archgis.repository.RxUtils;
 import ru.kpfu.itis.archgis.repository.cache.RealmCacheErrorHandler;
 import ru.kpfu.itis.archgis.repository.cache.RealmRewriteCache;
 import ru.kpfu.itis.archgis.repository.impl.ChsRepository;
@@ -32,7 +34,7 @@ public class DefaultChsRepository extends BaseRepository implements ChsRepositor
 
     @Override
     public Observable<List<ChsResponse>> chses(String name) {
-        return ApiFactory.getQuickSearchService()
+        return ApiFactory.getChsService()
                 .getCHS(name)
                 .flatMap(new RealmRewriteCache<>(ChsResponse.class))
                 .onErrorResumeNext(new RealmCacheErrorHandler<>(ChsResponse.class))

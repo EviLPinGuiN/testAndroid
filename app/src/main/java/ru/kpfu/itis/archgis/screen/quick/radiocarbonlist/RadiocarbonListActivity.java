@@ -16,18 +16,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.disposables.Disposable;
 import ru.kpfu.itis.archgis.R;
-import ru.kpfu.itis.archgis.model.response.RadiocarbonDate;
 import ru.kpfu.itis.archgis.model.response.RadiocarbonResponse;
 import ru.kpfu.itis.archgis.screen.BaseActivity;
 import ru.kpfu.itis.archgis.screen.common.CommonAdapter;
 import ru.kpfu.itis.archgis.screen.common.CommonListView;
 import ru.kpfu.itis.archgis.screen.common.LoadingDialog;
 import ru.kpfu.itis.archgis.screen.common.LoadingView;
-import ru.kpfu.itis.archgis.screen.map.SearchMapActivity;
-import ru.kpfu.itis.archgis.utils.BaseAdapter;
+import ru.kpfu.itis.archgis.utils.widget.BaseAdapter;
 import ru.kpfu.itis.archgis.utils.Constants;
-import ru.kpfu.itis.archgis.utils.DividerItemDecoration;
-import ru.kpfu.itis.archgis.utils.EmptyRecyclerView;
+import ru.kpfu.itis.archgis.utils.widget.DividerItemDecoration;
+import ru.kpfu.itis.archgis.utils.widget.EmptyRecyclerView;
 
 public class RadiocarbonListActivity extends BaseActivity implements CommonListView<RadiocarbonResponse>,
         BaseAdapter.OnItemClickListener<RadiocarbonResponse> {

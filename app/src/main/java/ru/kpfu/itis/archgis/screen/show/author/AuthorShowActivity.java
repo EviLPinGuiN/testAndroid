@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import ru.kpfu.itis.archgis.R;
 import ru.kpfu.itis.archgis.model.data.general.Author;
+import ru.kpfu.itis.archgis.model.data.general.Research;
 import ru.kpfu.itis.archgis.screen.BaseActivity;
 import ru.kpfu.itis.archgis.screen.adapter.BaseViewPagerAdapter;
 import ru.kpfu.itis.archgis.utils.Constants;
@@ -35,13 +37,14 @@ public class AuthorShowActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         FrameLayout contentFrameLayout = (FrameLayout) findViewById(R.id.activity_content);
         getLayoutInflater().inflate(R.layout.show_activity_author, contentFrameLayout);
+        mTabLayout.setVisibility(View.VISIBLE);
         ButterKnife.bind(this);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             mToolbar.setNavigationOnClickListener(v -> onBackPressed());
         }
-        Long id = getIntent().getLongExtra(Constants.ID_KEY, 0L);
+        Long id = getIntent().getLongExtra(Constants.ID_KEY, 1L);
         adapter = new AuthorViewPagerAdapter(getSupportFragmentManager());
         adapter.setViewPager(mViewPager, id);
         mTabLayout.setupWithViewPager(mViewPager);
@@ -67,6 +70,10 @@ public class AuthorShowActivity extends BaseActivity {
 
 
             adapter.addFrag(GeneralFragment.newInstance(id), getResources().getString(R.string.general));
+            adapter.addFrag(ResearchFragment.newInstance(id), getResources().getString(R.string.research));
+            adapter.addFrag(MonumentFragment.newInstance(id), getResources().getString(R.string.monument));
+            adapter.addFrag(ReportFragment.newInstance(id), getResources().getString(R.string.report));
+            adapter.addFrag(PublicationFragment.newInstance(id), getResources().getString(R.string.publication));
 
             viewPager.setAdapter(adapter);
             viewPager.setOffscreenPageLimit(adapter.getCount());

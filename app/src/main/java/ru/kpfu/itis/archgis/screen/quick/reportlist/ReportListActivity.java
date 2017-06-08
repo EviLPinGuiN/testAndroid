@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
@@ -22,11 +21,10 @@ import ru.kpfu.itis.archgis.screen.common.CommonAdapter;
 import ru.kpfu.itis.archgis.screen.common.CommonListView;
 import ru.kpfu.itis.archgis.screen.common.LoadingDialog;
 import ru.kpfu.itis.archgis.screen.common.LoadingView;
-import ru.kpfu.itis.archgis.screen.map.SearchMapActivity;
-import ru.kpfu.itis.archgis.utils.BaseAdapter;
+import ru.kpfu.itis.archgis.utils.widget.BaseAdapter;
 import ru.kpfu.itis.archgis.utils.Constants;
-import ru.kpfu.itis.archgis.utils.DividerItemDecoration;
-import ru.kpfu.itis.archgis.utils.EmptyRecyclerView;
+import ru.kpfu.itis.archgis.utils.widget.DividerItemDecoration;
+import ru.kpfu.itis.archgis.utils.widget.EmptyRecyclerView;
 
 /**
  * Created by DNS1 on 30.05.2017.

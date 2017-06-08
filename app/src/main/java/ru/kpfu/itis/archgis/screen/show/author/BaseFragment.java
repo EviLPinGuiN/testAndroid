@@ -22,8 +22,6 @@ public abstract class BaseFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-
         viewPager = (ViewPager) getActivity().findViewById(R.id.vp_author);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
