@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Parcelable;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
@@ -164,7 +165,7 @@ public class ArtifactFragment extends BaseFragment implements SelectImage, Artif
                 onSelectFromGalleryResult(data);
             }
             else if (requestCode == REQUEST_CAMERA){
-//                onCaptureImageResult(data);
+                onCaptureImageResult(data);
                 onSelectFromGalleryResult(data);
             }
 

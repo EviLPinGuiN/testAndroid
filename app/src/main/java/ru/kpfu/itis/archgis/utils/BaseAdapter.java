@@ -18,8 +18,6 @@ public abstract class BaseAdapter<VH extends RecyclerView.ViewHolder, T> extends
 
     @Nullable
     private OnItemClickListener<T> mOnItemClickListener;
-    @Nullable
-    private OnMapClickListener<T> mOnMapClickListener;
 
     private final View.OnClickListener mInternalListener = (view) -> {
         if (mOnItemClickListener != null) {
@@ -99,11 +97,7 @@ public abstract class BaseAdapter<VH extends RecyclerView.ViewHolder, T> extends
 
     }
 
-    public interface OnMapClickListener<T> {
 
-        void onItemClick(@NonNull T item);
-
-    }
 
 
 }

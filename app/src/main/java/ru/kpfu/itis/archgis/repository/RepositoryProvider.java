@@ -13,6 +13,7 @@ import ru.kpfu.itis.archgis.repository.impl.MonumentRepository;
 import ru.kpfu.itis.archgis.repository.impl.RadiocarbonRepository;
 import ru.kpfu.itis.archgis.repository.impl.ReportRepository;
 import ru.kpfu.itis.archgis.repository.impl.ResearchRepository;
+import ru.kpfu.itis.archgis.repository.impl.UserRepository;
 
 /**
  * Created by DNS1 on 03.06.2017.
@@ -37,7 +38,10 @@ public final class RepositoryProvider {
     private static ArtifactRepository sArtifactRepository;
 
     private static CollectionRepository sCollectionRepository;
+
     private static CultureRepository sCultureRepository;
+
+    private static UserRepository sUserRepository;
 
 
 
@@ -46,7 +50,13 @@ public final class RepositoryProvider {
     }
 
 
-
+    @NonNull
+    public static UserRepository provideUserRepository() {
+        if (sUserRepository == null) {
+            sUserRepository = new DefaultUserRepository();
+        }
+        return sUserRepository;
+    }
 
     @NonNull
     public static ResearchRepository provideResearchRepository() {

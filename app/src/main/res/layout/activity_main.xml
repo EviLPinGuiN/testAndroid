@@ -3,176 +3,193 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
     tools:context="ru.kpfu.itis.archgis.screen.data.CreateDataActivity">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_weight="1.0"
-        android:orientation="horizontal">
+        android:padding="8dp">
 
-
-        <RelativeLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_menu"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0">
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
 
-            <RelativeLayout
-                android:id="@+id/button_create_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/child_margin_top"
-                android:clickable="true">
-
-                <ImageView
-                    android:id="@+id/iv_create_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:background="@android:color/white"
-                    android:gravity="center"
-                    android:src="@drawable/ic_create_black_48dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/iv_create_main"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/child_margin_top"
-                    android:gravity="center"
-                    android:text="@string/menu_create_data"
-                    android:textSize="@dimen/text.20" />
-            </RelativeLayout>
-
-        </RelativeLayout>
+    </RelativeLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_weight="1.0"-->
+        <!--android:orientation="horizontal">-->
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.0">-->
 
-            <RelativeLayout
-                android:id="@+id/button_info_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/card_items_margin"
-                android:clickable="true">
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/button_create_main"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/activity_vertical_margin"-->
+                <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+                <!--android:clickable="true">-->
 
-                <ImageView
-                    android:id="@+id/iv_info_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:background="@android:color/white"
-                    android:src="@drawable/ic_info_black_48dp" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_create_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:src="@drawable/ic_create_list" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/iv_info_main"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/child_margin_top"
-                    android:gravity="center"
-                    android:text="@string/info"
-                    android:textSize="@dimen/text.20" />
-            </RelativeLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/iv_create_main"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/child_margin_top"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/menu_create_data"-->
+                    <!--android:textSize="@dimen/text.20" />-->
+            <!--</RelativeLayout>-->
 
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_weight="1.0"
-        android:orientation="horizontal">
+        <!--</RelativeLayout>-->
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.0">-->
 
-            <RelativeLayout
-                android:id="@+id/button_quick_search_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/card_items_margin"
-                android:clickable="true">
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/button_info_main"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/activity_vertical_margin"-->
+                <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+                <!--android:clickable="true">-->
 
-                <ImageView
-                    android:id="@+id/iv_quick_search_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:background="@android:color/white"
-                    android:src="@drawable/ic_search_black_48dp" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_info_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@null"-->
+                    <!--android:src="@drawable/ic_info_black_48dp" />-->
 
-                <TextView
-                    android:id="@+id/tv_quick_search_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/iv_quick_search_main"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/child_margin_top"
-                    android:gravity="center"
-                    android:text="@string/tv_quick_search"
-                    android:textSize="@dimen/text.20" />
-            </RelativeLayout>
-        </RelativeLayout>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/iv_info_main"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/child_margin_top"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/info"-->
+                    <!--android:textSize="@dimen/text.20" />-->
+            <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_weight="1.0"-->
+        <!--android:orientation="horizontal">-->
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.0">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.0">-->
 
-            <RelativeLayout
-                android:id="@+id/button_adv_search_main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_margin="@dimen/card_items_margin"
-                android:clickable="true">
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/button_quick_search_main"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/activity_vertical_margin"-->
+                <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+                <!--android:clickable="true">-->
 
-                <ImageView
-                    android:id="@+id/iv_adv_search_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:background="@android:color/white"
-                    android:src="@drawable/ic_zoom_in_black_48dp" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_quick_search_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@null"-->
+                    <!--android:src="@drawable/ic_search_black_48dp" />-->
 
-                <TextView
-                    android:id="@+id/tv_adv_search_main"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/iv_adv_search_main"
-                    android:layout_marginTop="@dimen/child_margin_top"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center"
-                    android:text="@string/tv_advanced_search"
-                    android:textSize="@dimen/text.20" />
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_quick_search_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/iv_quick_search_main"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="@dimen/child_margin_top"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/tv_quick_search"-->
+                    <!--android:textSize="@dimen/text.20" />-->
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
 
-            </RelativeLayout>
 
-        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1.0">-->
 
-    </LinearLayout>
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/button_adv_search_main"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="@dimen/activity_vertical_margin"-->
+                <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+                <!--android:clickable="true">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_adv_search_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@null"-->
+                    <!--android:src="@drawable/ic_zoom_in_black_48dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_adv_search_main"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/iv_adv_search_main"-->
+                    <!--android:layout_marginTop="@dimen/child_margin_top"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/tv_advanced_search"-->
+                    <!--android:textSize="@dimen/text.20" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
 </LinearLayout>

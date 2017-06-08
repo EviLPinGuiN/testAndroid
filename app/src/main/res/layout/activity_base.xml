@@ -14,7 +14,6 @@
 
         <include layout="@layout/toolbar"></include>
 
-
         <FrameLayout
             android:id="@+id/activity_content"
             android:layout_width="match_parent"
